@@ -1,0 +1,9 @@
+INFO  | 2019-02-12 21:16:29 | [main] utilities.LogManager (LogManager.java:23) - Running ..RegressionSuite
+INFO  | 2019-02-12 21:17:19 | [main] utilities.LogManager (LogManager.java:23) - Entered firstname
+INFO  | 2019-02-12 21:17:19 | [main] utilities.LogManager (LogManager.java:23) - enterFirstNameAndLastNameTestis Failed.
+INFO  | 2019-02-12 21:17:20 | [main] utilities.LogManager (LogManager.java:23) - Failed screenshot saved in the location C:\Users\Vivek\workspace\Selenium\Screenshots\enterFirstNameAndLastNameTest1549986440332.png
+INFO  | 2019-02-12 21:17:21 | [main] utilities.LogManager (LogManager.java:23) - Selected Male Radio button
+INFO  | 2019-02-12 21:17:21 | [main] utilities.LogManager (LogManager.java:23) - selectMaleRadioButtonTest is Passed.
+INFO  | 2019-02-12 21:17:21 | [main] utilities.LogManager (LogManager.java:23) - Clicked automationTesterCheckBox
+INFO  | 2019-02-12 21:17:21 | [main] utilities.LogManager (LogManager.java:23) - selectAHobbyTest is Passed.
+INFO  | 2019-02-12 21:17:21 | [main] utilities.LogManager (LogManager.java:23) - selectCountryTest is Passed.
