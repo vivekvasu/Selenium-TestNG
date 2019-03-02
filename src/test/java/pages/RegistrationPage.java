@@ -1,15 +1,33 @@
 package pages;
 
+import java.lang.reflect.Field;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+
+import tests.BaseTests;
 
 public class RegistrationPage extends pageObject
 {
 	public RegistrationPage(WebDriver wDriver) 
 	{
 		super(wDriver);
+		try 
+		{
+			Field[] fields = this.getClass().getDeclaredFields();
+			for (int i = 0; i < fields.length; i++) 
+			{
+				BaseTests.elementsMap.put(fields[i].get(this).toString(), fields[i].getName());
+			}
+		} catch (IllegalArgumentException e) 
+		{
+			e.printStackTrace();
+		} catch (IllegalAccessException e) 
+		{
+			e.printStackTrace();
+		}
 	}
 
 	@FindBy(name = "firstname")

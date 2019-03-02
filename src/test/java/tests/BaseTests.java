@@ -3,11 +3,13 @@ package tests;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.HashMap;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -23,14 +25,17 @@ import utilities.BrowserType;
 import utilities.DriverFactory;
 import utilities.ExtentManager;
 import utilities.LogManager;
+import utilities.WebDriverListener;
 
 public class BaseTests 
 {
-	WebDriver driver = null;
+	EventFiringWebDriver driver = null;
+	WebDriverListener listener =  null;
 	private static ExtentReports extent;
 	public static ThreadLocal<ExtentTest> testSuite = new ThreadLocal<ExtentTest>();
 	public static ThreadLocal <ExtentTest> parentTest = new ThreadLocal<ExtentTest>();
 	public static ThreadLocal <ExtentTest> testMethods = new ThreadLocal<ExtentTest>();
+	public static HashMap<String, String> elementsMap = new HashMap<String, String>();
 
 	@BeforeSuite
 	public void initialSetUp(ITestContext context)
@@ -43,7 +48,10 @@ public class BaseTests
 		extent = ExtentManager.setExtentReports();
 		parentXmlSuite = extent.createTest(context.getCurrentXmlTest().getSuite().getName());
 		testSuite.set(parentXmlSuite);
-		driver = DriverFactory.getWebDriver(BrowserType.CHROME);
+		WebDriver wDriver = DriverFactory.getWebDriver(BrowserType.CHROME);
+		driver = new EventFiringWebDriver(wDriver);
+		listener = new WebDriverListener();
+		driver.register(listener);
 		driver.get("https://www.toolsqa.com/automation-practice-form/");
 	}
 
@@ -65,7 +73,7 @@ public class BaseTests
 		}
 		else if (result.getStatus() == ITestResult.FAILURE)
 		{
-			LogManager.info(result.getName() + "is Failed.");
+			LogManager.info(result.getName() + " is Failed.");
 			testMethods.get().fail(result.getThrowable());
 			File image = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			String sFileName = "";
@@ -92,6 +100,7 @@ public class BaseTests
 	public void quitBrowser ()
 	{
 		extent.flush();
+		driver.unregister(listener);
 		driver.close();
 		driver.quit();
 	}

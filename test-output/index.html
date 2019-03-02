@@ -2,10 +2,9 @@
 
 <html>
   <head>
-  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -49,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-RegressionSuite">
-                    <span>C:\Users\Vivek\Git\Selenium\suites\RegressionSuite.xml</span>
+                    <span>C:\Users\Vivek\Git\SeleniumTests\suites\RegressionSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -152,9 +151,47 @@
                   <a name="enterFirstNameAndLastNameTest">
                   </a> <!-- enterFirstNameAndLastNameTest -->
                   <span class="method-name">enterFirstNameAndLastNameTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [firstname] but found [FirstName]
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [firstname] but found [FirstName]
 	at tests.RegistrationTests.enterFirstNameAndLastNameTest(RegistrationTests.java:19)
-... Removed 31 stack frames
+	at utilities.TestNGRunner.main(TestNGRunner.java:24)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 30 stack frames<br/> java.lang.AssertionError: expected [firstname] but found [FirstName]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at tests.RegistrationTests.enterFirstNameAndLastNameTest(RegistrationTests.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at utilities.TestNGRunner.main(TestNGRunner.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
+	at java.lang.Thread.run(Thread.java:745)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>org.testng.Assert.assertEquals(Assert.java:186)<br>tests.RegistrationTests.enterFirstNameAndLastNameTest(RegistrationTests.java:19)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>utilities.TestNGRunner.main(TestNGRunner.java:24)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)<br>java.lang.Thread.run(Thread.java:745)<br>
 </div> <!-- stack-trace -->
                   <em>
 (This test case is to verify that the firstname and lastname is entered.)                  </em>
@@ -200,14 +237,14 @@
         </div> <!-- panel RegressionSuite -->
         <div panel-name="test-xml-RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Vivek\Git\Selenium\suites\RegressionSuite.xml</span>
+            <span class="header-content">C:\Users\Vivek\Git\SeleniumTests\suites\RegressionSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;RegressionSuite&quot;&gt;
-  &lt;test name=&quot;RegistrationPageRegressionTests&quot;&gt;
+&lt;suite name=&quot;RegressionSuite&quot;&gt;
+  &lt;test name=&quot;RegistrationPageRegressionTests&quot; parallel=&quot;none&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.RegistrationTests&quot;&gt;
         &lt;methods&gt;
@@ -266,26 +303,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'enterFirstNameAndLastNameTest')
+data.setCell(0, 1, 'selectMaleRadioButtonTest')
 data.setCell(0, 2, 'tests.RegistrationTests')
-data.setCell(0, 3, 2420);
+data.setCell(0, 3, 687);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'selectCountryTest')
 data.setCell(1, 2, 'tests.RegistrationTests')
-data.setCell(1, 3, 721);
+data.setCell(1, 3, 562);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'selectMaleRadioButtonTest')
+data.setCell(2, 1, 'enterFirstNameAndLastNameTest')
 data.setCell(2, 2, 'tests.RegistrationTests')
-data.setCell(2, 3, 427);
+data.setCell(2, 3, 479);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'selectAHobbyTest')
 data.setCell(3, 2, 'tests.RegistrationTests')
-data.setCell(3, 3, 159);
+data.setCell(3, 3, 412);
 window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-RegressionSuite">
               </div> <!-- times-div-RegressionSuite -->
             </div> <!-- times-div -->
@@ -296,24 +333,6 @@ return data;
             <span class="header-content">Reporter output for RegressionSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectAHobbyTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked automationTesterCheckBox</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectMaleRadioButtonTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Selected Male Radio button</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">enterFirstNameAndLastNameTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Entered firstname</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-RegressionSuite" class="panel">
@@ -331,62 +350,62 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.RegistrationTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">initialSetUp(org.testng.TestRunner@29876704)</span>
+                <span class="method-name">initialSetUp(org.testng.TestRunner@440e8194)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void tests.RegistrationTests.enterFirstNameAndLastNameTest())</span>
-                <span class="method-start">49815 ms</span>
+                <span class="method-start">12310 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">enterFirstNameAndLastNameTest</span>
-                <span class="method-start">49822 ms</span>
+                <span class="method-start">12319 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=enterFirstNameAndLastNameTest status=FAILURE method=RegistrationTests.enterFirstNam...)</span>
-                <span class="method-start">52439 ms</span>
+                <span class="method-start">12798 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void tests.RegistrationTests.selectMaleRadioButtonTest())</span>
-                <span class="method-start">53312 ms</span>
+                <span class="method-start">14368 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectMaleRadioButtonTest</span>
-                <span class="method-start">53314 ms</span>
+                <span class="method-start">14370 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=selectMaleRadioButtonTest status=SUCCESS method=RegistrationTests.selectMaleRadioBu...)</span>
-                <span class="method-start">53743 ms</span>
+                <span class="method-start">15057 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void tests.RegistrationTests.selectAHobbyTest())</span>
-                <span class="method-start">53745 ms</span>
+                <span class="method-start">15059 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectAHobbyTest</span>
-                <span class="method-start">53746 ms</span>
+                <span class="method-start">15060 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=selectAHobbyTest status=SUCCESS method=RegistrationTests.selectAHobbyTest()[pri:0, ...)</span>
-                <span class="method-start">53906 ms</span>
+                <span class="method-start">15472 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void tests.RegistrationTests.selectCountryTest())</span>
-                <span class="method-start">53908 ms</span>
+                <span class="method-start">15474 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectCountryTest</span>
-                <span class="method-start">53909 ms</span>
+                <span class="method-start">15474 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=selectCountryTest status=SUCCESS method=RegistrationTests.selectCountryTest()[pri:0...)</span>
-                <span class="method-start">54634 ms</span>
+                <span class="method-start">16036 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">54886 ms</span>
+                <span class="method-start">16059 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

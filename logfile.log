@@ -1,9 +1,15 @@
-INFO  | 2019-02-12 21:16:29 | [main] utilities.LogManager (LogManager.java:23) - Running ..RegressionSuite
-INFO  | 2019-02-12 21:17:19 | [main] utilities.LogManager (LogManager.java:23) - Entered firstname
-INFO  | 2019-02-12 21:17:19 | [main] utilities.LogManager (LogManager.java:23) - enterFirstNameAndLastNameTestis Failed.
-INFO  | 2019-02-12 21:17:20 | [main] utilities.LogManager (LogManager.java:23) - Failed screenshot saved in the location C:\Users\Vivek\workspace\Selenium\Screenshots\enterFirstNameAndLastNameTest1549986440332.png
-INFO  | 2019-02-12 21:17:21 | [main] utilities.LogManager (LogManager.java:23) - Selected Male Radio button
-INFO  | 2019-02-12 21:17:21 | [main] utilities.LogManager (LogManager.java:23) - selectMaleRadioButtonTest is Passed.
-INFO  | 2019-02-12 21:17:21 | [main] utilities.LogManager (LogManager.java:23) - Clicked automationTesterCheckBox
-INFO  | 2019-02-12 21:17:21 | [main] utilities.LogManager (LogManager.java:23) - selectAHobbyTest is Passed.
-INFO  | 2019-02-12 21:17:21 | [main] utilities.LogManager (LogManager.java:23) - selectCountryTest is Passed.
+INFO  | 2019-03-02 18:02:08 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - Running ..RegressionSuite
+INFO  | 2019-03-02 18:02:20 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - Entered firstname
+INFO  | 2019-03-02 18:02:20 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - enterFirstNameAndLastNameTest is Failed.
+INFO  | 2019-03-02 18:02:21 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - Failed screenshot saved in the location C:\Users\Vivek\workspace\Selenium\Screenshots\enterFirstNameAndLastNameTest1551529941783.png
+INFO  | 2019-03-02 18:02:22 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - Clicking on maleRadioButton
+INFO  | 2019-03-02 18:02:22 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - Clicked on maleRadioButton
+INFO  | 2019-03-02 18:02:22 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - Selected Male Radio button
+INFO  | 2019-03-02 18:02:22 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - selectMaleRadioButtonTest is Passed.
+INFO  | 2019-03-02 18:02:22 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - Clicking on automationTesterCheckBox
+INFO  | 2019-03-02 18:02:22 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - Clicked on automationTesterCheckBox
+INFO  | 2019-03-02 18:02:22 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - Clicked automationTesterCheckBox
+INFO  | 2019-03-02 18:02:22 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - selectAHobbyTest is Passed.
+INFO  | 2019-03-02 18:02:23 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - Clicking on null
+INFO  | 2019-03-02 18:02:23 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - Clicked on null
+INFO  | 2019-03-02 18:02:23 | [utilities.TestNGRunner.main()] utilities.LogManager (LogManager.java:21) - selectCountryTest is Passed.
