@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="RegressionSuite" duration-ms="3742" started-at="2019-03-02T12:32:19Z" finished-at="2019-03-02T12:32:23Z">
+  <suite name="RegressionSuite" duration-ms="2299" started-at="2019-03-02T14:03:10Z" finished-at="2019-03-02T14:03:12Z">
     <groups>
       <group name="abc">
-        <method signature="RegistrationTests.enterFirstNameAndLastNameTest()[pri:0, instance:tests.RegistrationTests@395efabb]" name="enterFirstNameAndLastNameTest" class="tests.RegistrationTests"/>
+        <method signature="RegistrationTests.enterFirstNameAndLastNameTest()[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="enterFirstNameAndLastNameTest" class="tests.RegistrationTests"/>
       </group> <!-- abc -->
     </groups>
-    <test name="RegistrationPageRegressionTests" duration-ms="3742" started-at="2019-03-02T12:32:19Z" finished-at="2019-03-02T12:32:23Z">
+    <test name="RegistrationPageRegressionTests" duration-ms="2299" started-at="2019-03-02T14:03:10Z" finished-at="2019-03-02T14:03:12Z">
       <class name="tests.RegistrationTests">
-        <test-method status="PASS" signature="initialSetUp(org.testng.ITestContext)[pri:0, instance:tests.RegistrationTests@395efabb]" name="initialSetUp" is-config="true" duration-ms="12298" started-at="2019-03-02T18:02:07Z" finished-at="2019-03-02T18:02:19Z">
+        <test-method status="PASS" signature="initialSetUp(org.testng.ITestContext)[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="initialSetUp" is-config="true" duration-ms="17257" started-at="2019-03-02T19:32:53Z" finished-at="2019-03-02T19:33:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@440e8194]]>
+                <![CDATA[org.testng.TestRunner@23c966e7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetUp -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTests@395efabb]" name="beforeMethod" is-config="true" duration-ms="9" started-at="2019-03-02T18:02:19Z" finished-at="2019-03-02T18:02:19Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2019-03-02T19:33:10Z" finished-at="2019-03-02T19:33:10Z">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="enterFirstNameAndLastNameTest()[pri:0, instance:tests.RegistrationTests@395efabb]" name="enterFirstNameAndLastNameTest" duration-ms="479" started-at="2019-03-02T18:02:19Z" description="This test case is to verify that the firstname and lastname is entered." finished-at="2019-03-02T18:02:20Z">
+        <test-method status="FAIL" signature="enterFirstNameAndLastNameTest()[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="enterFirstNameAndLastNameTest" duration-ms="601" started-at="2019-03-02T19:33:10Z" description="This test case is to verify that the firstname and lastname is entered." finished-at="2019-03-02T19:33:10Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [firstname] but found [FirstName]]]>
@@ -79,18 +79,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterFirstNameAndLastNameTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.RegistrationTests@395efabb]" name="afterMethod" is-config="true" duration-ms="1569" started-at="2019-03-02T18:02:20Z" finished-at="2019-03-02T18:02:21Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="afterMethod" is-config="true" duration-ms="554" started-at="2019-03-02T19:33:10Z" finished-at="2019-03-02T19:33:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=enterFirstNameAndLastNameTest status=FAILURE method=RegistrationTests.enterFirstNameAndLastNameTest()[pri:0, instance:tests.RegistrationTests@395efabb] output={null}]]]>
+                <![CDATA[[TestResult name=enterFirstNameAndLastNameTest status=FAILURE method=RegistrationTests.enterFirstNameAndLastNameTest()[pri:0, instance:tests.RegistrationTests@1c3c4790] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTests@395efabb]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-03-02T18:02:21Z" finished-at="2019-03-02T18:02:21Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2019-03-02T19:33:11Z" finished-at="2019-03-02T19:33:11Z">
           <params>
             <param index="0">
               <value>
@@ -101,22 +101,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectMaleRadioButtonTest()[pri:0, instance:tests.RegistrationTests@395efabb]" name="selectMaleRadioButtonTest" duration-ms="687" started-at="2019-03-02T18:02:21Z" description="This test case verifies whether the Male radio button is selected." finished-at="2019-03-02T18:02:22Z">
+        <test-method status="PASS" signature="selectMaleRadioButtonTest()[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="selectMaleRadioButtonTest" duration-ms="248" started-at="2019-03-02T19:33:11Z" description="This test case verifies whether the Male radio button is selected." finished-at="2019-03-02T19:33:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectMaleRadioButtonTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.RegistrationTests@395efabb]" name="afterMethod" is-config="true" duration-ms="2" started-at="2019-03-02T18:02:22Z" finished-at="2019-03-02T18:02:22Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="afterMethod" is-config="true" duration-ms="4" started-at="2019-03-02T19:33:11Z" finished-at="2019-03-02T19:33:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=selectMaleRadioButtonTest status=SUCCESS method=RegistrationTests.selectMaleRadioButtonTest()[pri:0, instance:tests.RegistrationTests@395efabb] output={null}]]]>
+                <![CDATA[[TestResult name=selectMaleRadioButtonTest status=SUCCESS method=RegistrationTests.selectMaleRadioButtonTest()[pri:0, instance:tests.RegistrationTests@1c3c4790] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTests@395efabb]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-03-02T18:02:22Z" finished-at="2019-03-02T18:02:22Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-03-02T19:33:11Z" finished-at="2019-03-02T19:33:11Z">
           <params>
             <param index="0">
               <value>
@@ -127,26 +127,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectAHobbyTest()[pri:0, instance:tests.RegistrationTests@395efabb]" name="selectAHobbyTest" duration-ms="412" started-at="2019-03-02T18:02:22Z" description="This test case verifies whether the Automation Tester check box is selected." finished-at="2019-03-02T18:02:22Z">
+        <test-method status="PASS" signature="selectAHobbyTest()[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="selectAHobbyTest" duration-ms="398" started-at="2019-03-02T19:33:11Z" description="This test case verifies whether the Automation Tester check box is selected." finished-at="2019-03-02T19:33:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectAHobbyTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.RegistrationTests@395efabb]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-03-02T18:02:22Z" finished-at="2019-03-02T18:02:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=selectAHobbyTest status=SUCCESS method=RegistrationTests.selectAHobbyTest()[pri:0, instance:tests.RegistrationTests@395efabb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="selectCountryTest()[pri:0, instance:tests.RegistrationTests@395efabb]" name="selectCountryTest" duration-ms="562" started-at="2019-03-02T18:02:22Z" description="This test case verifies whether the country is selected." finished-at="2019-03-02T18:02:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCountryTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTests@395efabb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-03-02T18:02:22Z" finished-at="2019-03-02T18:02:22Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-03-02T19:33:12Z" finished-at="2019-03-02T19:33:12Z">
           <params>
             <param index="0">
               <value>
@@ -157,18 +142,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.RegistrationTests@395efabb]" name="afterMethod" is-config="true" duration-ms="2" started-at="2019-03-02T18:02:23Z" finished-at="2019-03-02T18:02:23Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-03-02T19:33:12Z" finished-at="2019-03-02T19:33:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=selectCountryTest status=SUCCESS method=RegistrationTests.selectCountryTest()[pri:0, instance:tests.RegistrationTests@395efabb] output={null}]]]>
+                <![CDATA[[TestResult name=selectAHobbyTest status=SUCCESS method=RegistrationTests.selectAHobbyTest()[pri:0, instance:tests.RegistrationTests@1c3c4790] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.RegistrationTests@395efabb]" name="quitBrowser" is-config="true" duration-ms="4265" started-at="2019-03-02T18:02:23Z" finished-at="2019-03-02T18:02:27Z">
+        <test-method status="PASS" signature="selectCountryTest()[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="selectCountryTest" duration-ms="427" started-at="2019-03-02T19:33:12Z" description="This test case verifies whether the country is selected." finished-at="2019-03-02T19:33:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountryTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-03-02T19:33:12Z" finished-at="2019-03-02T19:33:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectCountryTest status=SUCCESS method=RegistrationTests.selectCountryTest()[pri:0, instance:tests.RegistrationTests@1c3c4790] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:tests.RegistrationTests@1c3c4790]" name="quitBrowser" is-config="true" duration-ms="1227" started-at="2019-03-02T19:33:12Z" finished-at="2019-03-02T19:33:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
